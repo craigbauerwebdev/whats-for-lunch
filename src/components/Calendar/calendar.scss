@@ -1,0 +1,33 @@
+@import "../../scss/variables.scss";
+
+.calendar {
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+    header {
+        background-color: $header;
+        padding: 10px;
+        text-align: center;
+        h2 {
+            color: $primaryColor;
+        }
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        background: $white;
+        .day {
+            text-align: center;
+            width: 14.2%;
+            padding: 15px 0;
+        }
+        .weekday {
+            cursor: pointer;
+        }
+        .weekend {
+            cursor: none;
+        }
+        
+    }
+}

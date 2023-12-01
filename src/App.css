@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+/* DEFAULT SETTINGS */
+body,
+h1,
+h2,
+h3,
+td,
+th,
+tr,
+a,
+p,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu-Italic", "Lucida Sans", helvetica, sans;
+  background-image: url("images/hansel.jpg");
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-size: 100%;
+}
+
+.logo-header {
+  text-align: center;
+}
+
+.wfl-logo {
+  margin-top: 30px;
+  width: 216px;
+  box-shadow: 0 4px 4px -4px grey;
+}
+
+.wfl-title {
+  color: rgb(189, 171, 34);
+}
+
+/* === talk bubbles === */
+
+/* container */
+.container {
+  padding: 5% 5%;
+}
+
+.display-linebreak {
+  white-space: pre-line;
+}
+
+.round {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+/* talk bubble contents */
+.talktext {
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.talktext p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+/* ===  where is this  ===  */
+
+.date,
+.meal-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+
+/* === footer === */
+
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 16vh;
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  left: 0px;
+}
+
+.bag-icon {
+  width: 32px;
+  padding: 0px 8px;
+  margin-left: 2px;
+}
+
+.calendar-icon {
+  width: 28px;
+  padding: 0px 8px;
+  margin-left: 4px;
+}
+
+.showroom-icon {
+  width: 70px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.but-link {
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button {
+  border: none;
+}
+
+.button-container {
+  justify-content: center;
+  display: flex;
+}
+
+.home-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.4), 0 1.5px 6px rgba(0, 0, 0, 0.4); */
+  /* box-shadow: 5px 10px #888888; */
+  /* width: 270px; */
+  /* height: 46px; */
+  font-size: 24px;
+  /* border-radius: 40px; */
+  letter-spacing: 0px;
+  color: white;
+}
+
+.home-buttons a:link,
+.home-buttons a:visited,
+.home-buttons a:hover,
+.home-buttons a:active {
+  text-decoration: none;
+  color: #595858;
+}
+
+.home-buttons a:hover,
+.todays-button:hover {
+  color: #fe4e00;
+  font-size: 25px;
+}
+
+.main-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 34px;
+  justify-content: flex-start;
+}
+
+.todays-button {
+  color: #595858;
+  background-color: inherit;
+}
+
+.cal-button {
+  color: #e9190f;
+  background-color: inherit;
+}
+
+.month-on-button {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.takeout-button {
+  color: #fe4e00;
+  background-color: inherit;
+}
+
+/* only used if home page shows the number of "today's" date */
+/* .date-container {
+  border: 1.25px solid #FF0F80;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-left: 12px;
+} */
+
+/* guessed this yellow */
+.bottom-buttons2 a:visited {
+  text-decoration: none;
+  color: #f6e247;
+}
+
+.bottom-buttons2 a:hover {
+  text-decoration: none;
+}
+
+.bottom-buttons2 a:active {
+  text-decoration: none;
+}
+
+.envelope-icon {
+  display: none;
+  width: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+/* === calendar styles === */
+
+#calendar {
+  margin-top: 20px;
+}
+
+/* HEADER */
+/* header {
+  background: #292929;
+  height: 100px;
+  text-align: center;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font: 3.5em/1em "Lobster";
+  line-height: 100px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+ */
+/* TABLE */
+table {
+  width: 340px;
+  height: 340px;
+  background: #ebebeb;
+  margin: 16px auto;
+  border-collapse: collapse;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.1), 0 1.5px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* MONTH */
+.month {
+  display: flex;
+  background: #f77e49;
+  color: #fff;
+  font: 2em/1em arial;
+  height: 34px;
+  padding: 10px 0px 0px 4px;
+}
+
+/* WEEKS */
+.weeks {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  height: 28px;
+  font: 1em/1em arial;
+  color: rgb(82, 80, 80);
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* DAYS */
+.week td {
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  font: 500 1em/1em arial;
+  color: #212121;
+  padding-top: 15px;
+}
+
+.hover-day:hover {
+  background: rgba(95, 158, 160, 0.533);
+  color: #fff;
+}
+
+.grey-day {
+  color: #707070 !important;
+}
+
+.red {
+  color: red !important;
+}
+
+.close-x {
+  font-family: 'Concert One', cursive;
+  text-decoration: none;
+  font-weight: bold;
+  color:#7c7c7c;
+  font-size: 30px;
+  display:inline-block;
+    -webkit-transform:scale(1.2,1); /* Safari and Chrome */
+    -moz-transform:scale(1.2,1); /* Firefox */
+    -ms-transform:scale(1.2,1); /* IE 9 */
+    -o-transform:scale(1.2,1); /* Opera */
+    transform:scale(1.2,1); /* W3C */
+}
+
+.char-x {
+  margin-left: 30px;
+  margin-top: 16px;
+  
+}
+
+/*  === other days modal === */
+
+.swal2-styled.swal2-confirm {
+  border-radius: 20px !important;
+  height: 40px !important;
+  width: 80px !important;
+  background-color: cadetblue !important;
+}
+
+.green {
+  color: rgb(96, 126, 88);
+}
+
+/* === takeout options === */
+
+.takeouts-page {
+  background-color: rgba(249, 246, 246, 0.728) !important;
+  background-size: 100% 100% !important;
+  padding-bottom: 470px;
+  padding-top: 10px;
+}
+
+.other-food {
+  display: flex;
+  justify-content: center;
+  font: 1.2em arial;
+  margin-top: 40px;
+  color: #4a4949;
+}
+
+.takeout-container {
+  margin-top: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.takeout-joints {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 110px 110px;
+  margin-top: 20px;
+  column-gap: 36px;
+  row-gap: 15px;
+}
+
+.resto-logo {
+  width: 100px;
+}
+
+.resto-logo-big {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 50px;
+  width: 180px;
+}
+
+/* == mqs == */
+@media (min-width: 420px) {
+  #calendar {
+    margin-top: 50px;
+  }
+
+  .resto-logo-big {
+    margin-top: 66px;
+  }
+
+  .bottom-buttons {
+    position: inherit;
+    padding-top: 34vh;
+  }
+
+  .wfl-logo {
+    margin-top: 30px;
+  }
+
+  #calendar {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 522px) {
+  .takeout-joints {
+    column-gap: 50px;
+    row-gap: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("images/wfl_unsplash_desktop_edit_louis_hansel.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .other-food {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7em;
+    margin-top: 20px;
+  }
+  
+  .takeout-joints {
+    column-gap: 100px;
+  }
+}
+
+/* @media (min-width: 990px) {
+  body {
+    background-position: center top;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+} */
